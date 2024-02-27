@@ -1,0 +1,48 @@
+
+price = 3
+lowb1 = 3 min(lowb1, price)
+maxp1 = 0
+lowb2 = 3
+maxp2 = 0
+
+price = 3 
+lowb1 = 3
+maxp1 = 0
+lowb2 = 3
+maxp2 = 0
+
+price = 5
+lowb1 = 3
+maxp1 = 2
+lowb2 = 3
+maxp2 = 2
+
+price = 0
+lowb1 = 0
+maxp1 = 2
+lowb2 = -2
+maxp2 = 2
+
+price = 0
+lowb1 = 0
+maxp1 = 2
+lowb2 = -2
+maxp2 = 2
+
+price = 3
+lowb1 = 0
+maxp1 = 3
+lowb2 = -2
+maxp2 = 3
+
+price = 1
+lowb1 = 0
+maxp1 = 3
+lowb2 = -2
+maxp2 = 4
+
+price = 4
+lowb1 = 0
+maxp1 = 4
+lowb2 = -2
+maxp2 = 6
