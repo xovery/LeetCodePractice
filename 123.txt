@@ -33,13 +33,13 @@ price = 3
 lowb1 = 0
 maxp1 = 3
 lowb2 = -2
-maxp2 = 3
+maxp2 = 5
 
 price = 1
 lowb1 = 0
 maxp1 = 3
 lowb2 = -2
-maxp2 = 4
+maxp2 = 5
 
 price = 4
 lowb1 = 0
