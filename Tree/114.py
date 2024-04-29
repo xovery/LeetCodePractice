@@ -5,42 +5,34 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    def flatten(self, root: Optional[TreeNode]) -> None:
+        """
+        Do not return anything, modify root in-place instead.
+        """
+        if not root:
+            return
 
-#recursive
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        result = []
-
-        def printNode(root):
-            if root:
-                result.append(root.val)
-                printNode(root.left)
-                printNode(root.right)
-                
-        printNode(root)
-        
-        return result
-
-
-
-        
-
-#iterative
-'''
-        result = []
+        temp = TreeNode(-1)
+        curr = temp
         stack = []
         stack.append(root)
 
-        #LIFO
+
         while stack:
             node = stack.pop()
-            
-            if node:
-                result.append(node.val)
+            curr.left = None
+            curr.right = node
+            curr = node
+
+            if node.right:
                 stack.append(node.right)
-                stack.append(node.left)                
-        return result   
-'''
+            if node.left:
+                stack.append(node.left)
+        
+        root = temp.right
+                
 
 
-
+                    
+        return
         
