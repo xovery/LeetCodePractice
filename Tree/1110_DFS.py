@@ -33,7 +33,7 @@ class Solution:
         result = []
         prev = None
 
-        def dfsHelper2(node, prev, to_delete):
+        def dfsHelper(node, prev, to_delete):
 
             if node == None:
                 return
@@ -48,15 +48,15 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
             else:
-                dfsHelper2(node.left, node, to_delete)
-                dfsHelper2(node.right, node, to_delete)
+                dfsHelper(node.left, node, to_delete)
+                dfsHelper(node.right, node, to_delete)
 
         while queue:
             node = queue.popleft()            
             if node.val not in to_delete:
                 result.append(node)
-                dfsHelper2(node.left, node, to_delete)
-                dfsHelper2(node.right, node, to_delete)
+                dfsHelper(node.left, node, to_delete)
+                dfsHelper(node.right, node, to_delete)
             else:                                                        
                 if node.left:
                     queue.append(node.left)

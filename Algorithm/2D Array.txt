@@ -1,0 +1,7 @@
+class Solution:
+	def ArrayProcess(self, matrix:List[List[int]])->List[int]
+		for row in range(len(matrix))
+			for col in range(len(matrix[0])
+				matrix[row][col] == xxxxxx
+				
+				
